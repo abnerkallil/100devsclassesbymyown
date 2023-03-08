@@ -1,0 +1,167 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background: black;
+  width: 100%;
+  height: 65px;
+
+}
+
+footer {
+background-color: black;
+color: white;
+width: 100%;
+height: 400px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+li {
+  margin-top: 20px;
+  
+}
+li a {
+  color: white;
+  text-decoration: none;
+}
+li.firstItems {
+  float: left;
+  margin-right: 20px;
+}
+li.logoImg {
+  float: left;
+  margin-left: 40%;
+}
+li.lastItem {
+  float: right;
+  margin-right: 20px;
+}
+section#mainSection {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 3%;
+}
+section#mainSection p {
+  padding: 0 15%;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+section#whySection {
+  text-align: center;
+  padding: 3%;
+}
+section#whySection p {
+  padding: 0 30%;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+section#middleSection {
+  width: 100%;
+  text-align: center;
+  
+}
+section#middleSection > section{
+  float: left;
+  width: 50%;
+}
+section#middleSection > section + section {
+  float: right;
+  width: 50%;
+}
+
+section#middleSection p {
+  padding: 0 20%;
+  margin: 20px 0;
+}
+
+section#finalSection {
+
+  clear: both;
+  text-align: center;
+  padding: 10% 30%;
+}
+section#finalSection p {
+  margin: 20px 0;
+}
+footer > section > ul.imgUl li {
+  float: left;
+  margin-right: 20px;
+}
+footer > section  section {
+  float: left;
+  clear: both;
+  margin-top: 30px;
+}
+footer > section ul.firstMapUl li {
+  clear: none;
+  float: left;
+  margin-right: 30px;
+}
+footer > section ul.secondMapUl li {
+  clear: none;
+  float: left;
+  margin-right: 30px;
+}
+section#rightSection {
+  float: right;
+  text-align: right;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  width: 50%;
+}
+section#rightSection li{
+  clear: both;
+
+}
+section#leftSection {
+  width: 50%;
+}
+footer section#footerLastSection{
+  clear: both;
+  width: 100%;
+}
+footer section#footerLastSection section {
+  float: left;
+  clear: none;
+  margin-left: 30px;
+}
+footer section#footerLastSection > section + section {
+  margin-left: 70%;
+}
