@@ -6,8 +6,11 @@ async function makeReq(){
   const res = await fetch(`/api?student=${userName}`)
   const data = await res.json()
 
-  console.log(data);
-  document.querySelector("#personName").textContent = data.name
-  document.querySelector("#personStatus").textContent = data.status
-  document.querySelector("#personOccupation").textContent = data.currentOccupation
+  changeData(data)
+  
+}
+async function changeData(data){
+  document.querySelector("#personName").innerText = data.name
+  document.querySelector("#personStatus").innerText = data.status
+  document.querySelector("#personOccupation").innerText = data.currentOccupation
 }
